@@ -1,6 +1,6 @@
-package com.jojoldu.Chapter01.springboot.dto;
+package com.jojoldu.Book.springboot.dto;
 
-import com.jojoldu.Chapter01.springboot.web.dto.HelloResponseDto;
+import com.jojoldu.Book.springboot.web.dto.HelloResponseDto;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 

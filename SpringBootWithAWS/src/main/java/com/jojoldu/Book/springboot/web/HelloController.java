@@ -1,6 +1,6 @@
-package com.jojoldu.Chapter01.springboot.web;
+package com.jojoldu.Book.springboot.web;
 
-import com.jojoldu.Chapter01.springboot.web.dto.HelloResponseDto;
+import com.jojoldu.Book.springboot.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
