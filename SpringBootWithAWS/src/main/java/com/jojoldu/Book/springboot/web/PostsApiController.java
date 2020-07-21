@@ -1,6 +1,6 @@
 package com.jojoldu.Book.springboot.web;
 
-import com.jojoldu.Book.springboot.domain.posts.Posts;
+
 import com.jojoldu.Book.springboot.service.posts.PostsService;
 import com.jojoldu.Book.springboot.web.dto.PostsResponseDto;
 import com.jojoldu.Book.springboot.web.dto.PostsSaveRequestDto;
@@ -27,5 +27,10 @@ public class PostsApiController {
         @PutMapping("/api/v1/posts/{id}")
         public Long update(@PathVariable long id, @RequestBody PostsUpdateRequestDto postsDto){
             return postsService.update(id, postsDto);
+        }
+        @DeleteMapping("/api/v1/posts/{id}")
+        public Long delete(@PathVariable Long id){
+            postsService.delete(id);
+            return id;
         }
 }
